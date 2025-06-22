@@ -152,10 +152,9 @@ const CaretakerDashboard = ({ onSwitch = () => {} }) => {
     alert('Starting video call with ' + patientData.name);
   };
 
-  // Scroll to top on component mount
   useEffect(() => {
     window.scrollTo(0, 0); // Reset scroll position to top
-  }, []); // Empty dependency array ensures this runs only on mount
+  }, []);
 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px', fontFamily: 'system-ui, -apple-system, sans-serif', background: '#f5f7fa', minHeight: '100vh' }}>
