@@ -1,4 +1,3 @@
-// E:\medicare-app\server\index.js
 const express = require('express');
 const db = require('./db/db');
 const authRoutes = require('./routes/auth');
@@ -10,7 +9,6 @@ const path = require('path');
 
 const app = express();
 
-// Configure multer for file uploads
 const storage = multer.diskStorage({
   destination: './uploads/',
   filename: (req, file, cb) => {

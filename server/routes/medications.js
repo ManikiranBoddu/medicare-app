@@ -1,4 +1,3 @@
-// E:\medicare-app\server\routes\medications.js
 const express = require('express');
 const router = express.Router();
 

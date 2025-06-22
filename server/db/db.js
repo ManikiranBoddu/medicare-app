@@ -1,4 +1,3 @@
-// E:\medicare-app\server\db\db.js
 const sqlite3 = require('sqlite3').verbose();
 
 const path = require('path');
@@ -11,7 +10,6 @@ const db = new sqlite3.Database(dbPath, (err) => {
   }
   console.log('Connected to database');
 
-  // Initialize or update medications table schema
   db.run(`
     CREATE TABLE IF NOT EXISTS medications (
       id INTEGER PRIMARY KEY,
@@ -26,7 +24,6 @@ const db = new sqlite3.Database(dbPath, (err) => {
   `, (err) => {
     if (err) console.error('Error creating medications table:', err.message);
     else {
-      // Check and add time column if missing
       db.all(`PRAGMA table_info(medications)`, (err, columns) => {
         if (err) console.error('Error checking schema:', err.message);
         else {
@@ -60,7 +57,6 @@ const db = new sqlite3.Database(dbPath, (err) => {
     if (err) console.error('Error creating logs table:', err.message);
   });
 
-  // Initialize users table schema
   db.run(`
     CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY,
