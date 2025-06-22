@@ -1,7 +1,7 @@
 # Medicare Companion
 
 ## Overview
-Medicare Companion is a web-based application designed to help patients and caretakers manage medication schedules effectively. It includes features such as medication tracking, adherence monitoring, streak calculation, and a calendar view to visualize medication history. The app is built with React and provides a user-friendly interface for both patients and caretakers.
+Medicare Companion is a web-based application designed to help patients and caretakers manage medication schedules effectively. It includes features such as medication tracking, adherence monitoring, streak calculation, and a calendar view to visualize medication history. The app is built with React for the frontend and a Node.js/Express server for the backend, providing a user-friendly interface for both patients and caretakers.
 
 ## Features
 - **Medication Management**: Add, view, and delete medications with details like name, dosage, frequency, and time.
@@ -12,15 +12,29 @@ Medicare Companion is a web-based application designed to help patients and care
 - **Role Switching**: Switch between patient and caretaker dashboards.
 - **Notifications**: Display alerts for missed or taken medications (future enhancement).
 
-## Installation
+## Installation and Usage
 
 ### Prerequisites
 - Node.js (v14.x or later)
 - npm (comes with Node.js)
 - Git (for version control)
 
+### Dependencies
+- **Client (React)**:
+  - `react`
+  - `react-dom`
+  - `react-router-dom`
+  - `react-icons` (for Font Awesome icons)
+- **Server (Node.js/Express)**:
+  - `express`
+  - `cors` (for cross-origin resource sharing)
+  - `body-parser` (for parsing request bodies)
+  - Other dependencies as per your server setup (e.g., database libraries like `mongoose` if used)
+
+*Note*: A `package.json` file is included in both the `client` and `server` directories with these dependencies. Install them as part of the setup.
+
 ### Steps
-1. Clone the repository:
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/ManikiranBoddu/medicare-app.git
-   cd medicare-app# medicare-app
+   git clone https://github.com/your-username/medicare-app.git
+   cd medicare-app
