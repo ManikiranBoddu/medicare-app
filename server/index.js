@@ -1,4 +1,3 @@
-// E:\medicare-app\server\index.js
 const express = require('express');
 const db = require('./db/db');
 const authRoutes = require('./routes/auth');
