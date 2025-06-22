@@ -38,3 +38,35 @@ Medicare Companion is a web-based application designed to help patients and care
    ```bash
    git clone https://github.com/your-username/medicare-app.git
    cd medicare-app
+
+
+## Starting the Application
+To run the full application (client and server), follow these steps:
+
+1. **Start the Server**:
+Navigate to the server directory:
+```bash
+
+cd server
+
+Start the server:
+
+```bash
+
+npm start
+
+The server should run on http://localhost:5000 by default (adjust port in .env if needed).
+
+2. **Start the Client**:
+In a new terminal, navigate to the client directory:
+``` bash
+
+cd client
+
+Start the development server:
+
+``` bash
+
+npm start
+
+The client will run on http://localhost:3000. Open this URL in your browser to view the app.
