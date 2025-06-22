@@ -1,0 +1,96 @@
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.login-container input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:disabled {
+  background-color: #cccccc;
+}
+
+.login-container .error {
+  color: red;
+  text-align: center;
+}
+/* src/styles/components/Login.css */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.login-container input,
+.login-container select,
+.login-container button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.login-container button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.login-container .error {
+  color: red;
+  margin-top: 10px;
+}
+
+.login-container .success {
+  color: green;
+  margin-top: 10px;
+}
+
+.login-container a {
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}

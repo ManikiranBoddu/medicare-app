@@ -1,0 +1,37 @@
+.medication-form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.medication-form-container h3 {
+  text-align: center;
+}
+
+.medication-form-container input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.medication-form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.medication-form-container button:disabled {
+  background-color: #cccccc;
+}
+
+.medication-form-container .error {
+  color: red;
+  text-align: center;
+}
